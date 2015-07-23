@@ -1,11 +1,13 @@
 <% provide(:title, "Home") %>
-<div class="center">
-    <h1>Home</h1>
-    <p>Here is the homepage of my website, includes:</p>
-    <ul>
-        <li>website(s)</li>
-        <li>github</li>
-        <li>treehouse profile</li>
-        <li>codecademy profile</li>
-    </ul>
+<div class="container center" id="websites-div">
+  <h4>My Websites:</h4>
+  <br/>
+  <ul>
+    <li><%= link_to image_tag('snip-personal.png', alt: "Matt's Personal Website", class: "website-thumbnail"), '#' %></li>
+  </ul>
 </div>
+    
+
+    
+
+
