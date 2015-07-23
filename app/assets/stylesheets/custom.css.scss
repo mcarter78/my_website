@@ -1,0 +1,104 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* universal */
+
+body {
+  padding-top: 60px;
+  background-color: rgb(51, 153, 255);
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+li {
+    list-style: none;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  color: #fff;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  color: #fff;
+}
+
+/* header */
+
+.navbar {
+    background-color: rgb(51, 153, 255);
+    border-bottom: 2px solid rgb(153, 204, 255);
+    padding: 5px;
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-right li a {
+    color: #fff;
+    padding: 5px 5px;
+}
+
+.navbar-right li {
+    padding: 1px 1px;
+}
+
+.navbar-right li.btn {
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.navbar-right li.btn a:hover,
+.navbar-right li.btn a:before,
+.navbar-right li.btn a:active,
+.navbar-right li.btn a:after,
+.navbar-right li.btn a:focus {
+  background-color: rgb(51, 153, 255);  
+}
+
