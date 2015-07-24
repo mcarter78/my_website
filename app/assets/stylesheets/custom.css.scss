@@ -43,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif;
   line-height: 1;
   color: #fff;
+
 }
 
 h1 {
@@ -122,7 +123,8 @@ ul {
     padding: 5px;
     border: 1px solid #000;
     border-radius: 5px;
-    background-color: #fdfdfd; 
+    background-color: #fdfdfd;
+    text-align: center;
 }
 
 .navbar-right li.btn a:hover,
@@ -164,7 +166,20 @@ footer p {
 }
 
 .website-thumbnail {
-  height: 100px;
+  height: 58px;
   border: 1px solid #fff;
+}
 
+#menu-up {
+  height: 20px;
+}
+
+#portfolio {
+  background: none;
+  padding-top: 100px;
+}
+
+#developer {
+  background: none;
+  padding-top: 150px;
 }
