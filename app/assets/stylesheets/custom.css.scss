@@ -125,7 +125,9 @@ ul {
     border-radius: 5px;
     background-color: #fdfdfd;
     text-align: center;
+  //  float: right;
 }
+
 
 .navbar-right li.btn a:hover,
   .navbar-right li.btn a:before,
@@ -135,17 +137,19 @@ ul {
   background-color: #fdfdfd;  
 }
 
+
 /* Footer */
+
 
 footer p {
   margin-left: 10px;
   margin-top: 10px;
   color: #ebebeb;
   font-size: 0.7em;
+  border: none;
 }
 
 /* Home Content */
-
 
 
 #profiles, #contact {
@@ -183,3 +187,63 @@ footer p {
   background: none;
   padding-top: 150px;
 }
+
+/* Media Queries */
+
+
+@media screen and (max-width: 768px) {
+  #main-content {
+    padding-top: 80px;
+  }
+  #logo.btn {
+    clear:both;
+    padding-bottom: 10px;
+  }
+  .navbar-right li.btn {
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 768px) {
+  #developer, #portfolio {
+    background-color: #4c4c4c;
+  }
+  #developer h3, #portfolio h3 {
+    padding: 10px;
+  }
+  #portfolio {
+    padding-top: 20px;
+  }
+  #main-content {
+    padding-top: 80px;
+  }
+  #logo.btn {
+    clear:both;
+    padding-bottom: 10px;
+  }
+  .navbar-right li.btn {
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+  #developer, #portfolio {
+    padding: 0;
+  }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 600px)
+and (orientation: portrait) {
+  body {
+  background-image: url('background-sm.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+  
+}
+
