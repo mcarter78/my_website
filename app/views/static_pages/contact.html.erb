@@ -1,11 +1,18 @@
 <% provide(:title, "Contact") %>
-<div class="center">
-    <h1>Contact Me</h1>
-    <p>This is the page with my contact info, including:</p>
-    <ul>
-        <li>email</li>
-        <li>twitter</li>
-        <li>linkedin</li>
-        <li>facebook</li>
+<div class="jumbotron center">
+  <h1>Contact Me</h1>
+  <div class="container" id="contact-div">
+    <h4>My contact info:</h4>
+    <br/>
+    <ul id="contact">
+      <li id="email"><%= link_to image_tag("email-logo.png",
+                      alt: "Email link", class: "contact-image"), 'mailto:sjsharksftw@gmail.com' %></li>
+      <li id="linkedin"><%= link_to image_tag("linkedin-logo.png",
+                      alt: "Linkedin Profile", class: "contact-image"), 'https://www.linkedin.com/pub/matt-carter/13/b88/a11' %></li>
+      <li id="twitter"><%= link_to image_tag("twitter-logo.png",
+                      alt: "Twitter Profile", class: "contact-image"), 'https://twitter.com/_mcarter' %></li>
+      <li id="facebook"><%= link_to image_tag("facebook-logo.png",
+                      alt: "Facebook Profile", class: "contact-image"), 'https://www.facebook.com/matt.carter.9847' %></li>
     </ul>
+  </div>
 </div>
