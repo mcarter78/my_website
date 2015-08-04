@@ -171,6 +171,7 @@ footer p {
 
 .website-thumbnail {
   height: 58px;
+  width: 100px;
   border: 1px solid #fff;
 }
 
@@ -187,6 +188,19 @@ footer p {
 #developer {
   background: none;
   padding-top: 150px;
+}
+
+#websites-div ul {
+  li {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  }
+}
+
+.website-thumbnail-caption {
+  padding-top: 5px;
+  display: block;
 }
 
 /* Media Queries */
