@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Matt Carter | <%= yield(:title) %></title>
+  <title>Matt Carter | Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'script', 'data-turbolinks-track' => true %>
+  <!-- <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'script', 'data-turbolinks-track' => true %> -->
   <%= csrf_meta_tags %>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -21,11 +22,17 @@
 </head>
   <body>
     <%= render 'layouts/header' %>
-    
+
     <div class="container" id="main-content">
-      <%= yield %>
+      <div class="jumbotron center" id="developer">
+        <h3 id="title">Full-Stack Web Developer.</h3>
+        <i id="down" class="fa fa-angle-down"></i>
+        <%= image_tag("background-lg.jpg", id: "background-image") %>
+      </div>
     </div>
-    
-    <%= render 'layouts/footer' %>
+    <div id="below">
+      <%= render 'static_pages/portfolio' %>
+      <%= render 'static_pages/about' %>
+    </div>
   </body>
 </html>

@@ -5,15 +5,11 @@
 
 body, html {
   height: 100%;
+  width: 100%;
 }
 
 body {
-  height: 100%;
   padding-top: 60px;
-  background-color: rgb(51, 153, 255);
-  background-image: url('background-lg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 section {
@@ -75,9 +71,24 @@ a {
 }
 
 .jumbotron {
-  background-color: #4c4c4c;
   margin-top: 80px;
-  color: #fff;
+  color: #000;
+  width: 100%;
+  margin: 0;
+}
+
+#websites-div *,
+#profiles-div * {
+  color: #000;
+}
+
+#main-content {
+  height: inherit;
+}
+
+#title {
+  font-size: 3.5em;
+  text-shadow: 2px 2px 2px black;
 }
 
 ul {
@@ -88,7 +99,6 @@ ul {
 /* header */
 
 .navbar {
-    /* background-color: rgb(51, 153, 255); */
     border-bottom: 2px solid rgb(153, 204, 255);
     padding: 5px;
 }
@@ -97,11 +107,12 @@ ul {
   float: left;
   margin-right: 10px;
   font-family: 'Oswald', sans-serif;
-  font-size: 2em;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 5px;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 2px black;
 }
 
 #logo:hover, #logo:active, #logo:visited {
@@ -120,10 +131,11 @@ ul {
 
 .navbar-right li.btn {
     margin-right: 5px;
+    margin-top: 10px;
     padding: 5px;
     border: 1px solid #000;
     border-radius: 5px;
-    background-color: #fdfdfd;
+    background-color: rgba(255,255,255,0.6);
     text-align: center;
 }
 
@@ -133,7 +145,16 @@ ul {
   .navbar-right li.btn a:active,
   .navbar-right li.btn a:after,
   .navbar-right li.btn a:focus {
-  background-color: #fdfdfd;  
+  background-color: #fdfdfd;
+}
+
+i.fa {
+  color: #fff;
+  float: left;
+  font-size: 1.7em;
+  text-shadow: 0px 1px 3px #000;
+  margin-top: 25px;
+  margin-right: 15px;
 }
 
 
@@ -169,8 +190,7 @@ footer p {
 }
 
 .website-thumbnail {
-  height: 58px;
-  border: 1px solid #fff;
+
 }
 
 #menu-up {
@@ -185,20 +205,82 @@ footer p {
 
 #developer {
   background: none;
-  padding-top: 150px;
+  padding-top: 200px;
 }
 
-#websites-div ul {
-  li {
-  display: inline-block;
-  margin: 10px;
+#websites-div {
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
-  }
+}
+
+#websites-div ul li {
+  width: 100%;
+  text-align: left;
+}
+
+#websites-div ul li a img {
+  width: 60%;
+  float: left;
+  clear: left;
+  margin-top: 40px;
+}
+
+#websites-div ul li a i {
+  margin: 0;
+  float: right;
+  text-shadow: none;
+}
+
+#websites-div ul li p {
+  float: left;
+  width: 60%;
+  font-size: 1.2em;
 }
 
 .website-thumbnail-caption {
+  font-size: 1.5em;
   padding-top: 5px;
   display: block;
+  float: left;
+  width: 50%;
+  text-decoration: underline;
+}
+
+#background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+}
+
+#down {
+  position: absolute;
+  bottom: 20px;
+  font-size: 4.5em;
+}
+
+#matt-image {
+  width: 20%;
+  border-radius: 50%;
+  float: left;
+}
+
+#about-me {
+  text-align: left;
+  float: left;
+  width: 60%;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+#about-me p {
+  font-size: 1.2em;
 }
 
 /* Media Queries */
@@ -216,11 +298,12 @@ footer p {
     display: block;
     width: 100%;
     clear: both;
+    margin-bottom: 5px;
   }
 }
 
-@media only screen 
-and (min-device-width : 320px) 
+@media only screen
+and (min-device-width : 320px)
 and (max-device-width : 768px) {
   #developer, #portfolio {
     background-color: #4c4c4c;
@@ -257,6 +340,5 @@ and (orientation: portrait) {
   background-size: cover;
   background-repeat: no-repeat;
   }
-  
-}
 
+}
