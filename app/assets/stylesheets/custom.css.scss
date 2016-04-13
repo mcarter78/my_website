@@ -305,8 +305,8 @@ footer p {
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 768px) {
-  #developer, #portfolio {
-    background-color: #4c4c4c;
+  #title {
+    margin-top: 50px;
   }
   #developer h3, #portfolio h3 {
     padding: 10px;
