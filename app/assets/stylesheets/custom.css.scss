@@ -211,18 +211,21 @@ footer p {
 #websites-div {
   width: 80%;
   margin: 0 auto;
-  text-align: center;
+}
+
+.clear-left {
+  clear: left;
 }
 
 #websites-div ul li {
-  width: 100%;
+  width: 40%;
   text-align: left;
+  margin-left: 50px;
+  display: inline-block;
 }
 
 #websites-div ul li a img {
-  width: 60%;
-  float: left;
-  clear: left;
+  width: 80%;
   margin-top: 40px;
 }
 
@@ -233,8 +236,8 @@ footer p {
 }
 
 #websites-div ul li p {
+  width: 80%;
   float: left;
-  width: 60%;
   font-size: 1.2em;
 }
 
@@ -300,6 +303,15 @@ footer p {
     clear: both;
     margin-bottom: 5px;
   }
+  #websites-div ul li {
+    width: 80%;
+  }
+  #websites-div ul li a img {
+    width: 80%;
+  }
+  #websites-div ul li p {
+    width: 80%;
+  }
 }
 
 @media only screen
@@ -328,6 +340,9 @@ and (max-device-width : 768px) {
   }
   #developer, #portfolio {
     padding: 0;
+  }
+  #websites-div ul li {
+    width: 80%;
   }
   #websites-div ul li a img {
     width: 80%;
