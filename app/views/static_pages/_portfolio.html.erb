@@ -59,14 +59,14 @@
 
     <style>
 
-        /* jssor slider bullet navigator skin 05 css */
-        /*
-        .jssorb05 div           (normal)
-        .jssorb05 div:hover     (normal mouseover)
-        .jssorb05 .av           (active)
-        .jssorb05 .av:hover     (active mouseover)
-        .jssorb05 .dn           (mousedown)
-        */
+         /* jssor slider bullet navigator skin 05 css */
+
+        .jssorb05 div
+        .jssorb05 div:hover
+        .jssorb05 .av
+        .jssorb05 .av:hover
+        .jssorb05 .dn
+
         .jssorb05 {
             position: absolute;
         }
@@ -75,7 +75,7 @@
             /* size of bullet elment */
             width: 16px;
             height: 16px;
-            background: url('img/b05.png') no-repeat;
+            background: url('b05.png') no-repeat;
             overflow: hidden;
             cursor: pointer;
         }
@@ -96,12 +96,12 @@
         .jssora22l, .jssora22r {
             display: block;
             position: absolute;
-            /* size of arrow element */
             width: 40px;
             height: 58px;
             cursor: pointer;
-            background: url('img/a22.png') center center no-repeat;
+            
             overflow: hidden;
+
         }
         .jssora22l { background-position: -10px -31px; }
         .jssora22r { background-position: -70px -31px; }
@@ -120,25 +120,31 @@
         </div> -->
         <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 600px; overflow: hidden;">
             <div data-p="225.00" style="display: none;">
+                <%= link_to image_tag("thumb-bricks.jpg", :style => "position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; width: 100%; height: 600px;"), 'http://brickclicker2016.win', :target => 'blank' %>
+                <div style="position: absolute; top: 380px; left: 30px; width: 480px; height: 212px; font-size: 16px; color: #fff; line-height: 16px;background-color:#000;padding:10px;border-radius:5px;">
+                  This is not a game!  Click to add bricks!<p style="color:#fff;">Technologies used: Angular, Firebase, Hapi</p><p><a href="https://github.com/mcarter78/brickclicker2016" target="blank"><i class="fa fa-github"></i></a></p></div>
+                <div data-t="0" style="position: absolute; top: 100px; left: 600px; width: 445px; height: 300px;">                </div>
+            </div>
+            <div data-p="225.00" style="display: none;">
                 <%= link_to image_tag("thumb-lpcheck.jpg", :style => "position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; width: 100%; height: 600px;"), 'http://lpcheck.com', :target => 'blank' %>
-                <div style="position: absolute; top: 380px; left: 30px; width: 480px; height: 212px; font-size: 16px; color: #000; line-height: 16px;background-color:#fff;padding:10px;border-radius:5px;">LPCheck is a simple app that uses the Discogs.com API to fetch my record collection. When
+                <div style="position: absolute; top: 380px; left: 30px; width: 480px; height: 212px; font-size: 16px; color: #fff; line-height: 16px;background-color:#000;padding:10px;border-radius:5px;">LPCheck is a simple app that uses the Discogs.com API to fetch my record collection. When
                 I find a record that I want, I can use the search feature on my app to make
-                sure that I don't have it already. For demo purposes, use username: mcarter78<p style="color:#000;">Technologies used: React, Redux, ExpressJS, NodeJS, ES6, SASS, Discogs API</p><p><a href="https://github.com/mcarter78/lpcheck" target="blank"><i class="fa fa-github"></i></a></p></div>
+                sure that I don't have it already. For demo purposes, use username: mcarter78<p style="color:#fff;">Technologies used: React, Redux, ExpressJS, NodeJS, ES6, SASS, Discogs API</p><p><a href="https://github.com/mcarter78/lpcheck" target="blank"><i class="fa fa-github"></i></a></p></div>
                 <div data-t="0" style="position: absolute; top: 100px; left: 600px; width: 445px; height: 300px;">                </div>
             </div>
             <div data-p="225.00" style="display: none;">
               <%= link_to image_tag("thumb-anagram.jpg", :style => "position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; width: 100%; height: 600px;"), 'http://www.anagram-battle.com', :target => 'blank' %>
-              <div style="position: absolute; top: 380px; left: 30px; width: 480px; height: 212px; font-size: 16px; color: #000; line-height: 16px;background-color:#fff;padding:10px;border-radius:5px;">Anagram Battle is a game that tests your ability to deconstruct words and reconstruct them into
+              <div style="position: absolute; top: 380px; left: 30px; width: 480px; height: 212px; font-size: 16px; color: #fff; line-height: 16px;background-color:#000;padding:10px;border-radius:5px;">Anagram Battle is a game that tests your ability to deconstruct words and reconstruct them into
                  new words. Go head to head with a variety of fearsome monsters, using your word knowledge to
                  defeat them. Come up with 3 anagrams for the word given to send your foe to his doom. Defeat all
-                 eight monsters to become the supreme champion of vocabulary wisdom!<p style="color:#000;">Technologies used: JavaScript, JQuery, HTML/CSS</p><p><a href="https://github.com/mcarter78/anagram-battle" target="blank"><i class="fa fa-github"></i></a></p></div>
+                 eight monsters to become the supreme champion of vocabulary wisdom!<p style="color:#fff;">Technologies used: JavaScript, JQuery, HTML/CSS</p><p><a href="https://github.com/mcarter78/anagram-battle" target="blank"><i class="fa fa-github"></i></a></p></div>
               <div data-t="0" style="position: absolute; top: 100px; left: 600px; width: 445px; height: 300px;">
               </div>
             </div>
             <div data-p="225.00" data-po="80% 55%" style="display: none;">
               <%= link_to image_tag("thumb-birdspots.jpg", :style => "position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; width: 100%; height: 600px;"), 'http://birdspots.net', :target => 'blank' %>
-              <div style="position: absolute; top: 380px; left: 30px; width: 480px; height: 212px; font-size: 16px; color: #000; line-height: 16px;background-color:#fff;padding:10px;border-radius:5px;">BirdSpots allows bird watchers to record the birds they have seen. Users are able to see all of their past entries as markers on a map. It allows Birders to leave the paper diary at home
-                  and record their entries in a more user-friendly and permanent way.<p style="color:#000;">Technologies used: RethinkDB, AngularJS, ExpressJS, NodeJS, Google Maps, Flickr API</p><p><a href="https://github.com/mcarter78/birder_app" target="blank"><i class="fa fa-github"></i></a></p></div>
+              <div style="position: absolute; top: 380px; left: 30px; width: 480px; height: 212px; font-size: 16px; color: #fff; line-height: 16px;background-color:#000;padding:10px;border-radius:5px;">BirdSpots allows bird watchers to record the birds they have seen. Users are able to see all of their past entries as markers on a map. It allows Birders to leave the paper diary at home
+                  and record their entries in a more user-friendly and permanent way.<p style="color:#fff;">Technologies used: RethinkDB, AngularJS, ExpressJS, NodeJS, Google Maps, Flickr API</p><p><a href="https://github.com/mcarter78/birder_app" target="blank"><i class="fa fa-github"></i></a></p></div>
               <div data-t="0" style="position: absolute; top: 100px; left: 600px; width: 445px; height: 300px;">
               </div>
             </div>
@@ -157,7 +163,7 @@
 
         </div>
         <!-- Bullet Navigator -->
-        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+        <div data-u="navigator" class="jssorb05" style="position:absolute;bottom:16px;right:16px;" data-autocenter="1">
             <!-- bullet navigator item prototype -->
             <div data-u="prototype" style="width:16px;height:16px;"></div>
         </div>
